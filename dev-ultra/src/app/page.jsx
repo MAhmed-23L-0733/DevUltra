@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Code, Zap, Users, Star } from "lucide-react";
 import RippleGrid from "@/components/background";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -48,17 +49,19 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <motion.button
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0 20px 40px rgba(59, 130, 246, 0.4)",
-              }}
-              whileTap={{ scale: 0.95 }}
-              className="group bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold py-4 px-8 rounded-full flex items-center gap-3 transition-all duration-300 shadow-lg"
-            >
-              Get Started
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </motion.button>
+            <Link href = "/email_us" passHref>
+              <motion.button
+                whileHover={{
+                  scale: 1.05,
+                  boxShadow: "0 20px 40px rgba(59, 130, 246, 0.4)",
+                }}
+                whileTap={{ scale: 0.95 }}
+                className="group bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold py-4 px-8 rounded-full flex items-center gap-3 transition-all duration-300 shadow-lg"
+              >
+                Get Started
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </motion.button>
+            </Link>
 
             <motion.button
               whileHover={{ scale: 1.05 }}
