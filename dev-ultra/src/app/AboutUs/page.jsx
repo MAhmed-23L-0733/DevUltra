@@ -16,6 +16,7 @@ import {
   SiTypescript,
   SiGit,
 } from "react-icons/si";
+import { SiVuedotjs } from "react-icons/si";
 
 export default function AboutUs() {
   return (
@@ -130,6 +131,10 @@ export default function AboutUs() {
               {
                 name: "Next.js",
                 icon: <SiNextdotjs className="text-white text-5xl" />,
+              },
+              {
+                name: "Vue.js",
+                icon: <SiVuedotjs className="text-green-500 text-5xl" />,
               },
               {
                 name: "Express.js",
