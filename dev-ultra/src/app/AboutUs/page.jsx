@@ -11,7 +11,6 @@ import {
   SiExpress,
   SiNodedotjs,
   SiMongodb,
-  SiPostgresql,
   SiPython,
   SiTypescript,
   SiGit,
@@ -144,8 +143,16 @@ export default function AboutUs() {
                 icon: <SiMongodb className="text-green-400 text-5xl" />,
               },
               {
-                name: "SQL",
-                icon: <SiPostgresql className="text-sky-500 text-5xl" />,
+                name: "PostgreSQL",
+                icon: (
+                  <Image
+                    src="/postgres.svg"
+                    alt="PostgreSQL"
+                    width={48}
+                    height={48}
+                    className="object-contain"
+                  />
+                ),
               },
               {
                 name: "Python",
@@ -194,8 +201,16 @@ export default function AboutUs() {
                   icon: <SiMongodb className="text-green-400 text-5xl" />,
                 },
                 {
-                  name: "SQL",
-                  icon: <SiPostgresql className="text-sky-500 text-5xl" />,
+                  name: "PostgreSQL",
+                  icon: (
+                    <Image
+                      src="/postgres.svg"
+                      alt="PostgreSQL"
+                      width={48}
+                      height={48}
+                      className="object-contain"
+                    />
+                  ),
                 },
                 {
                   name: "Python",

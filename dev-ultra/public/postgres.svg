@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="256" height="256">
+  <defs>
+    <linearGradient id="g" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#316192"/>
+      <stop offset="100%" stop-color="#2b5d8a"/>
+    </linearGradient>
+  </defs>
+  <!-- Simple stylized database cylinder to represent PostgreSQL -->
+  <ellipse cx="32" cy="12" rx="20" ry="6" fill="url(#g)" />
+  <rect x="12" y="12" width="40" height="28" rx="6" fill="#2b5d8a" />
+  <ellipse cx="32" cy="40" rx="20" ry="6" fill="#244c71" />
+  <ellipse cx="32" cy="24" rx="20" ry="4" fill="#3b6ea0" opacity="0.6"/>
+  <text x="32" y="50.5" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#fff" text-anchor="middle">PostgreSQL</text>
+</svg>
