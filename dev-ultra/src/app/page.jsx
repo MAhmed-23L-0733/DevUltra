@@ -194,8 +194,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 px-6 text-center">
+      {/*<section className="py-24 px-6 text-center">
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -237,7 +236,7 @@ export default function Home() {
             </a>
           </motion.div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

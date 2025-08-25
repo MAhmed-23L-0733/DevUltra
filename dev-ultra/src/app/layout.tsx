@@ -31,7 +31,7 @@ export default function RootLayout({
       textColor: "#fff",
       links: [
         { label: "Home", ariaLabel: "Home", href: "/" },
-        { label: "About us", ariaLabel: "About Company", href: "/AboutUs" },
+        { label: "About us", ariaLabel: "About Company", href: "/about-us" },
       ],
     },
     {

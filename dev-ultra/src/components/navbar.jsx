@@ -220,11 +220,11 @@ const Navbar = ({
               </div>
               <div className="nav-card-links mt-auto flex flex-col gap-[4px] relative z-10">
                 {item.links?.map((lnk, i) => (
-                  <a
+                  <Link
                     key={`${lnk.label}-${i}`}
                     className="nav-card-link inline-flex items-center gap-[8px] no-underline cursor-pointer transition-all duration-100 hover:text-white hover:translate-x-1 text-[15px] md:text-[16px] opacity-80 hover:opacity-100 group/link"
                     href={lnk.href}
-                    target={item.label == "Contact" ? "_blank" : "false"}
+                    target={item.label == "Contact" ? "_blank" : "_self"}
                     aria-label={lnk.ariaLabel}
                   >
                     <GoArrowUpRight
@@ -232,7 +232,7 @@ const Navbar = ({
                       aria-hidden="true"
                     />
                     {lnk.label}
-                  </a>
+                  </Link>
                 ))}
               </div>
 
