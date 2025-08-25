@@ -3,6 +3,7 @@ import { useLayoutEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { GoArrowUpRight } from "react-icons/go";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = ({
   logo,
@@ -145,14 +146,27 @@ const Navbar = ({
         ref={navRef}
         className={`card-nav ${
           isExpanded ? "open" : ""
-        } block h-[60px] rounded-2xl shadow-2xl relative overflow-hidden will-change-[height] backdrop-blur-2xl bg-white/5 border border-white/10 transition-all duration-500 hover:shadow-3xl hover:border-white/20 hover:backdrop-blur-3xl hover:bg-white/10`}
+        } h-[60px] rounded-2xl shadow-2xl relative overflow-hidden will-change-[height] backdrop-blur-sm bg-white/5 border border-white/10 transition-all ease-linear duration-100 hover:shadow-3xl hover:border-white/20 hover:backdrop-blur-3xl hover:bg-white/10 block`}
         style={{
           boxShadow: isExpanded
             ? "0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05)"
             : "0 10px 25px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(255, 255, 255, 0.05)",
         }}
       >
-        <div className="card-nav-top absolute inset-x-0 top-0 h-[60px] flex items-center justify-between p-3 pl-[1.3rem] pr-[1.3rem] z-[2]">
+        <div className="card-nav-top absolute inset-x-0 top-0 h-[60px] flex items-center justify-between px-5 z-[2]">
+          <div className="logo-container flex items-center group cursor-pointer">
+            <div className="relative overflow-hidden rounded-full p-1 transition-all duration-300">
+              <Link href="/">
+                <Image
+                  src={logo}
+                  alt={logoAlt}
+                  height={50}
+                  width={70}
+                  className="transition-all duration-300 group-hover:scale-110 filter drop-shadow-lg"
+                />
+              </Link>
+            </div>
+          </div>
           <div
             className={`hamburger-menu ${
               isHamburgerOpen ? "open" : ""
@@ -178,41 +192,6 @@ const Navbar = ({
               }`}
             />
           </div>
-
-          <div className="logo-container flex items-center md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 order-1 md:order-none group cursor-pointer">
-            <div className="relative overflow-hidden rounded-xl p-1 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-blue-500/20 group-hover:to-purple-500/20">
-              <Image
-                src={logo}
-                alt={logoAlt}
-                height={50}
-                width={70}
-                className="transition-all duration-300 group-hover:scale-110 filter drop-shadow-lg"
-              />
-            </div>
-          </div>
-
-          <button
-            type="button"
-            className="card-nav-cta-button hidden md:inline-flex border-0 rounded-xl px-6 py-2 font-semibold cursor-pointer transition-all duration-500 lg:flex justify-center items-center bg-gradient-to-r from-blue-500 via-blue-600 to-purple-600 text-white hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 hover:shadow-2xl hover:shadow-blue-500/25 hover:scale-105 active:scale-95 shadow-lg relative overflow-hidden group"
-          >
-            <span className="relative z-10 flex items-center gap-2">
-              Get Started
-              <svg
-                className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M13 7l5 5m0 0l-5 5m5-5H6"
-                />
-              </svg>
-            </span>
-            <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-in-out"></div>
-          </button>
         </div>
 
         <div
@@ -226,7 +205,7 @@ const Navbar = ({
           {(items || []).slice(0, 3).map((item, idx) => (
             <div
               key={`${item.label}-${idx}`}
-              className="nav-card select-none relative flex flex-col gap-3 p-[16px_20px] rounded-xl min-w-0 flex-[1_1_auto] h-auto min-h-[80px] md:h-full md:min-h-0 md:flex-[1_1_0%] backdrop-blur-xl border border-white/20 transition-all duration-500 hover:border-white/30 hover:shadow-xl hover:shadow-black/20 hover:-translate-y-1 hover:backdrop-blur-2xl cursor-pointer group overflow-hidden"
+              className="nav-card select-none relative flex flex-col gap-3 p-[16px_20px] rounded-xl min-w-0 flex-[1_1_auto] h-auto min-h-[80px] md:h-full md:min-h-0 md:flex-[1_1_0%] backdrop-blur-xl border border-white/20 transition-all duration-100 hover:border-white/30 hover:shadow-xl hover:shadow-black/20 hover:-translate-y-1 hover:backdrop-blur-2xl cursor-pointer group overflow-hidden"
               ref={setCardRef(idx)}
               style={{
                 backgroundColor: `${item.bgColor}40`,
@@ -234,17 +213,18 @@ const Navbar = ({
               }}
             >
               {/* Gradient overlay on hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-100"></div>
 
-              <div className="nav-card-label font-semibold tracking-[-0.5px] text-[18px] md:text-[20px] relative z-10 group-hover:text-white transition-colors duration-300">
+              <div className="nav-card-label font-semibold tracking-[-0.5px] text-[18px] md:text-[20px] relative z-10 group-hover:text-white transition-colors duration-100">
                 {item.label}
               </div>
               <div className="nav-card-links mt-auto flex flex-col gap-[4px] relative z-10">
                 {item.links?.map((lnk, i) => (
                   <a
                     key={`${lnk.label}-${i}`}
-                    className="nav-card-link inline-flex items-center gap-[8px] no-underline cursor-pointer transition-all duration-300 hover:text-white hover:translate-x-1 text-[15px] md:text-[16px] opacity-80 hover:opacity-100 group/link"
+                    className="nav-card-link inline-flex items-center gap-[8px] no-underline cursor-pointer transition-all duration-100 hover:text-white hover:translate-x-1 text-[15px] md:text-[16px] opacity-80 hover:opacity-100 group/link"
                     href={lnk.href}
+                    target={item.label == "Contact" ? "_blank" : "false"}
                     aria-label={lnk.ariaLabel}
                   >
                     <GoArrowUpRight

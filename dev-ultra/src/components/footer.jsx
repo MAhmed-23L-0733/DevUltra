@@ -1,16 +1,15 @@
 "use client";
 import { motion } from "framer-motion";
+import { FaThreads } from "react-icons/fa6";
 import {
   ArrowUpRight,
-  Github,
-  Twitter,
   Linkedin,
   Mail,
   MapPin,
   Phone,
+  Instagram,
   Code,
   Heart,
-  ExternalLink,
 } from "lucide-react";
 import Image from "next/image";
 
@@ -19,29 +18,39 @@ const Footer = () => {
 
   const footerLinks = {
     Services: [
-      { name: "Web Development", href: "/services/web" },
-      { name: "Mobile Apps", href: "/services/mobile" },
-      { name: "UI/UX Design", href: "/services/design" },
-      { name: "Consulting", href: "/services/consulting" },
+      { name: "Web Development" },
+      { name: "Mobile Apps" },
+      { name: "UI/UX Design" },
+      { name: "Consulting" },
     ],
     Company: [
-      { name: "About Us", href: "/about" },
-      { name: "Our Team", href: "/team" },
-      { name: "Careers", href: "/careers" },
-      { name: "Contact", href: "/contact" },
+      { name: "About Us", href: "/AboutUs" },
+      { name: "Contact", href: "/email_us" },
     ],
-    Resources: [
-      { name: "Blog", href: "/blog" },
-      { name: "Documentation", href: "/docs" },
-      { name: "Case Studies", href: "/cases" },
-      { name: "Support", href: "/support" },
-    ],
+    // Resources: [
+    //   { name: "Blog", href: "/blog" },
+    //   { name: "Documentation", href: "/docs" },
+    //   { name: "Case Studies", href: "/cases" },
+    //   { name: "Support", href: "/support" },
+    // ],
   };
 
   const socialLinks = [
-    { name: "GitHub", icon: Github, href: "https://github.com" },
-    { name: "Twitter", icon: Twitter, href: "https://twitter.com" },
-    { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com" },
+    {
+      name: "Instagram",
+      icon: Instagram,
+      href: "https://www.instagram.com/devultrasolutions?igsh=Nm1yNDh5b3d4c3k4",
+    },
+    {
+      name: "Threads",
+      icon: FaThreads,
+      href: "https://www.threads.com/@devultrasolutions",
+    },
+    {
+      name: "LinkedIn",
+      icon: Linkedin,
+      href: "https://www.linkedin.com/company/devultrasolutions/",
+    },
     { name: "Email", icon: Mail, href: "mailto:hello@devultra.com" },
   ];
 
@@ -143,13 +152,19 @@ const Footer = () => {
                 <ul className="space-y-3">
                   {links.map((link) => (
                     <li key={link.name}>
-                      <a
-                        href={link.href}
-                        className="group flex items-center gap-2 text-gray-400 hover:text-white transition-all duration-300 hover:translate-x-1"
-                      >
-                        <span className="text-sm">{link.name}</span>
-                        <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                      </a>
+                      {title != "Services" ? (
+                        <a
+                          href={link.href}
+                          className="group flex items-center gap-2 text-gray-400 hover:text-white transition-all duration-300 hover:translate-x-1"
+                        >
+                          <span className="text-sm">{link.name}</span>
+                          <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                        </a>
+                      ) : (
+                        <div className="group flex items-center gap-2 text-gray-400 hover:text-white transition-all duration-300 hover:translate-x-1 cursor-pointer">
+                          <span className="text-sm">{link.name}</span>
+                        </div>
+                      )}
                     </li>
                   ))}
                 </ul>

@@ -39,7 +39,13 @@ export default function AboutUs() {
           transition={{ delay: 0.3, duration: 1 }}
           className="mt-6 text-lg md:text-xl max-w-4xl mx-auto text-gray-300 leading-relaxed"
         >
-          At DevUltra, we're a team of dreamers and doers on a mission to turn bold ideas into meaningful digital experiences. As a growing startup, we combine creativity, technology, and fresh thinking to build solutions that inspire and engage. Every project we take on is a step toward innovation which is crafted with precision, fueled by passion, and driven by the belief that even the smallest idea can create a big impact.
+          At DevUltra, we're a team of dreamers and doers on a mission to turn
+          bold ideas into meaningful digital experiences. As a growing startup,
+          we combine creativity, technology, and fresh thinking to build
+          solutions that inspire and engage. Every project we take on is a step
+          toward innovation which is crafted with precision, fueled by passion,
+          and driven by the belief that even the smallest idea can create a big
+          impact.
         </motion.p>
       </div>
 
@@ -202,10 +208,10 @@ export default function AboutUs() {
                   name: "MongoDB",
                   icon: <SiMongodb className="text-green-400 text-5xl" />,
                 },
-                  {
-                    name: "Prisma",
-                    icon: <SiPrisma className="text-indigo-400 text-5xl" />,
-                  },
+                {
+                  name: "Prisma",
+                  icon: <SiPrisma className="text-indigo-400 text-5xl" />,
+                },
                 {
                   name: "PostgreSQL",
                   icon: (
@@ -283,7 +289,16 @@ export default function AboutUs() {
           </span>
         </h2>
         <p className="text-gray-300 text-lg leading-relaxed max-w-4xl mx-auto text-justify">
-          At DevUltra, our strength comes from the creativity, passion, and diverse expertise of our team. We may be early in our journey, but that only fuels our hunger to push the boundaries of technology and build something remarkable. Driven by innovation and a desire to make an impact, we turn bold ideas into solutions that stand out in both form and function. Collaboration, adaptability, and continuous growth are at the heart of what we do because every project is a chance to push boundaries and create digital experiences that truly inspire. Sure, we’re still figuring some things out along the way, but that’s part of the journey and it drives us to keep getting better.
+          At DevUltra, our strength comes from the creativity, passion, and
+          diverse expertise of our team. We may be early in our journey, but
+          that only fuels our hunger to push the boundaries of technology and
+          build something remarkable. Driven by innovation and a desire to make
+          an impact, we turn bold ideas into solutions that stand out in both
+          form and function. Collaboration, adaptability, and continuous growth
+          are at the heart of what we do because every project is a chance to
+          push boundaries and create digital experiences that truly inspire.
+          Sure, we’re still figuring some things out along the way, but that’s
+          part of the journey and it drives us to keep getting better.
         </p>
       </div>
 
@@ -300,15 +315,15 @@ export default function AboutUs() {
           </span>
         </motion.h2>
         <p className="text-gray-300 max-w-3xl mx-auto mb-8 text-lg">
-          Whether you’re a visionary startup or a functional enterprise, DevUltra is
-          here to help you harness the power of technology. We combine design,
-          development, and innovation to craft digital solutions that are not
-          only functional but also inspiring. Together, let’s create something
-          that defines the future.
+          Whether you’re a visionary startup or a functional enterprise,
+          DevUltra is here to help you harness the power of technology. We
+          combine design, development, and innovation to craft digital solutions
+          that are not only functional but also inspiring. Together, let’s
+          create something that defines the future.
         </p>
         <motion.a
           whileHover={{ scale: 1.1 }}
-          href="/contact"
+          href="/email_us"
           className="px-10 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full font-semibold shadow-lg"
         >
           Get in Touch

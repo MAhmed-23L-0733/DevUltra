@@ -30,17 +30,20 @@ export default function RootLayout({
       bgColor: "#0D0716",
       textColor: "#fff",
       links: [
-        { label: "Company", ariaLabel: "About Company" },
-        { label: "Careers", ariaLabel: "About Careers" },
+        { label: "Home", ariaLabel: "Home", href: "/" },
+        { label: "About us", ariaLabel: "About Company", href: "/AboutUs" },
       ],
     },
     {
-      label: "Projects",
+      label: "Business",
       bgColor: "#170D27",
       textColor: "#fff",
       links: [
-        { label: "Featured", ariaLabel: "Featured Projects" },
-        { label: "Case Studies", ariaLabel: "Project Case Studies" },
+        {
+          label: "Work with us",
+          ariaLabel: "Featured Projects",
+          href: "/email_us",
+        },
       ],
     },
     {
@@ -48,12 +51,30 @@ export default function RootLayout({
       bgColor: "#271E37",
       textColor: "#fff",
       links: [
-        { label: "Email", ariaLabel: "Email us" },
-        { label: "Twitter", ariaLabel: "Twitter" },
-        { label: "LinkedIn", ariaLabel: "LinkedIn" },
+        {
+          label: "Email",
+          ariaLabel: "Email us",
+          href: "mailto:hello@devultra.com",
+        },
+        {
+          label: "Instagram",
+          ariaLabel: "Twitter",
+          href: "https://www.instagram.com/devultrasolutions?igsh=Nm1yNDh5b3d4c3k4",
+        },
+        {
+          label: "LinkedIn",
+          ariaLabel: "LinkedIn",
+          href: "https://www.linkedin.com/company/devultrasolutions/",
+        },
+        {
+          label: "Threads",
+          ariaLabel: "LinkedIn",
+          href: "https://www.threads.com/@devultrasolutions",
+        },
       ],
     },
   ];
+
   return (
     <html lang="en">
       <body

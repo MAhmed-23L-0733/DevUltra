@@ -14,11 +14,11 @@ export default function Home() {
             enableRainbow={false}
             gridColor="#ffffff"
             rippleIntensity={0.05}
-            gridSize={10}
-            gridThickness={15}
+            gridSize={15}
+            gridThickness={5}
             mouseInteraction={true}
-            mouseInteractionRadius={10}
-            opacity={0.8}
+            mouseInteractionRadius={30}
+            opacity={0.3}
           />
         </div>
 
@@ -49,7 +49,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <Link href = "/email_us" passHref>
+            <Link href="/email_us" passHref>
               <motion.button
                 whileHover={{
                   scale: 1.05,
@@ -62,14 +62,6 @@ export default function Home() {
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </motion.button>
             </Link>
-
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="border border-gray-600 hover:border-gray-400 text-gray-300 hover:text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 backdrop-blur-sm"
-            >
-              View Our Work
-            </motion.button>
           </motion.div>
         </div>
 
@@ -230,17 +222,19 @@ export default function Home() {
               and let's start your next project today.
             </p>
 
-            <motion.button
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0 25px 50px rgba(59, 130, 246, 0.4)",
-              }}
-              whileTap={{ scale: 0.95 }}
-              className="group bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold py-6 px-12 rounded-full flex items-center gap-3 mx-auto transition-all duration-300 shadow-xl"
-            >
-              Start Your Project
-              <Star className="w-6 h-6 group-hover:rotate-12 transition-transform" />
-            </motion.button>
+            <a href="mailto:hello@devultra.com" target="_blank">
+              <motion.button
+                whileHover={{
+                  scale: 1.05,
+                  boxShadow: "0 25px 50px rgba(59, 130, 246, 0.4)",
+                }}
+                whileTap={{ scale: 0.95 }}
+                className="group bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold py-6 px-12 rounded-full flex items-center gap-3 mx-auto transition-all duration-300 shadow-xl"
+              >
+                Start Your Project
+                <Star className="w-6 h-6 group-hover:rotate-12 transition-transform" />
+              </motion.button>
+            </a>
           </motion.div>
         </div>
       </section>
