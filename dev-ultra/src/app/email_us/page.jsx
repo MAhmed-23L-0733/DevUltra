@@ -33,7 +33,7 @@ export default function Home() {
             </p>
 
             <motion.a
-              href="mailto:Devultrasolutions@gmail.com?subject=For%20more%20information"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=Devultrasolutions@gmail.com&su=For%20more%20information"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{
@@ -46,6 +46,7 @@ export default function Home() {
               Let's Collaborate
               <Star className="w-6 h-6 group-hover:rotate-12 transition-transform" />
             </motion.a>
+
           </motion.div>
         </div>
       </section>
