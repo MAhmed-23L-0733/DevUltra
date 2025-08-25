@@ -25,12 +25,11 @@ export default function Home() {
                   backgroundClip: "text",
                 }}
               >
-                Ready to Build Something Amazing?
+                Building Digital Experiences That Matter
               </span>
             </h2>
             <p className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
-              Let's collaborate to turn your vision into reality. Get in touch
-              and let's start your next project today.
+              Your goals deserve more than templates. We craft custom solutions designed to deliver real results.
             </p>
 
             <motion.a
@@ -44,7 +43,7 @@ export default function Home() {
               whileTap={{ scale: 0.95 }}
               className="group bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold py-6 px-12 rounded-full flex items-center gap-3 mx-auto transition-all duration-300 shadow-xl w-65"
             >
-              Start Your Project
+              Let's Collaborate
               <Star className="w-6 h-6 group-hover:rotate-12 transition-transform" />
             </motion.a>
           </motion.div>
