@@ -48,7 +48,7 @@ const Footer = () => {
       icon: Linkedin,
       href: "https://www.linkedin.com/company/devultrasolutions/",
     },
-    { name: "Email", icon: Mail, href: "mailto:devultrasolutions@gmail.com" },
+    { name: "Email", icon: Mail, href: "https://mail.google.com/mail/?view=cm&fs=1&to=Devultrasolutions@gmail.com" },
   ];
 
   const containerVariants = {

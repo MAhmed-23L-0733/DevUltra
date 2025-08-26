@@ -162,38 +162,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-24 px-6 bg-gradient-to-r from-gray-900/50 to-black/50">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              { number: "100+", label: "Projects Completed" },
-              { number: "50+", label: "Happy Clients" },
-              { number: "5+", label: "Years Experience" },
-              { number: "24/7", label: "Support Available" },
-            ].map((stat, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.5 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="text-center"
-              >
-                <motion.div
-                  whileHover={{ scale: 1.1 }}
-                  className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-2"
-                >
-                  {stat.number}
-                </motion.div>
-                <p className="text-gray-400 text-sm md:text-base">
-                  {stat.label}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/*<section className="py-24 px-6 text-center">
         <div className="max-w-4xl mx-auto">
