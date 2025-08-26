@@ -25,15 +25,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const items = [
-    {
-      label: "About",
-      bgColor: "#0D0716",
-      textColor: "#fff",
-      links: [
-        { label: "Home", ariaLabel: "Home", href: "/" },
-        { label: "About us", ariaLabel: "About Company", href: "/about-us" },
-      ],
-    },
+    // {
+    //   label: "About",
+    //   bgColor: "#0D0716",
+    //   textColor: "#fff",
+    //   links: [
+    //     { label: "Home", ariaLabel: "Home", href: "/" },
+    //     { label: "About us", ariaLabel: "About Company", href: "/about-us" },
+    //   ],
+    // },
     {
       label: "Business",
       bgColor: "#170D27",
@@ -54,7 +54,7 @@ export default function RootLayout({
         {
           label: "Email",
           ariaLabel: "Email us",
-          href: "mailto:hello@devultra.com",
+          href: "mailto:devultrasolutions@gamil.com",
         },
         {
           label: "Instagram",

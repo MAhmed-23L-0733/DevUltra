@@ -134,6 +134,14 @@ const Navbar = ({
     }
   };
 
+  const closeMenu = () => {
+    setIsHamburgerOpen(false);
+    setIsExpanded(false);
+    if (tlRef.current) {
+      tlRef.current.reverse();
+    }
+  };
+
   const setCardRef = (i) => (el) => {
     if (el) cardsRef.current[i] = el;
   };
@@ -226,6 +234,7 @@ const Navbar = ({
                     href={lnk.href}
                     target={item.label == "Contact" ? "_blank" : "_self"}
                     aria-label={lnk.ariaLabel}
+                    onClick={closeMenu}
                   >
                     <GoArrowUpRight
                       className="nav-card-link-icon shrink-0 transition-transform duration-300 group-hover/link:rotate-45 group-hover/link:scale-110"

@@ -21,7 +21,7 @@ import { SiVuedotjs } from "react-icons/si";
 export default function AboutUs() {
   return (
     <div className="bg-black text-white min-h-screen w-full">
-      <div className="text-center py-24 px-6">
+      <div className="text-center px-6">
         <motion.h1
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -260,7 +260,7 @@ export default function AboutUs() {
           transition={{ duration: 1 }}
           className="bg-gradient-to-r from-gray-900 via-black to-gray-900 rounded-3xl shadow-2xl p-10 text-center border border-gray-800 relative"
         >
-          <FaQuoteLeft className="absolute top-6 left-6 text-5xl text-purple-500 opacity-40" />
+          <FaQuoteLeft className="absolute top-6 left-6 text-3xl lg:text-5xl text-purple-500 opacity-40" />
           <h2 className="text-4xl font-bold mb-6">
             Our{" "}
             <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">

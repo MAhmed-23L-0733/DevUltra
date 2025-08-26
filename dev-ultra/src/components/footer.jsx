@@ -23,10 +23,7 @@ const Footer = () => {
       { name: "UI/UX Design" },
       { name: "Consulting" },
     ],
-    Company: [
-      { name: "About Us", href: "/about-us" },
-      { name: "Contact", href: "/email_us" },
-    ],
+    Company: [{ name: "Contact", href: "/email_us" }],
     // Resources: [
     //   { name: "Blog", href: "/blog" },
     //   { name: "Documentation", href: "/docs" },
@@ -51,7 +48,7 @@ const Footer = () => {
       icon: Linkedin,
       href: "https://www.linkedin.com/company/devultrasolutions/",
     },
-    { name: "Email", icon: Mail, href: "mailto:hello@devultra.com" },
+    { name: "Email", icon: Mail, href: "mailto:devultrasolutions@gmail.com" },
   ];
 
   const containerVariants = {

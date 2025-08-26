@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Code, Zap, Users, Star } from "lucide-react";
 import RippleGrid from "@/components/background";
 import Link from "next/link";
+import AboutUs from "@/components/aboutuspage";
 
 export default function Home() {
   return (
@@ -237,6 +238,9 @@ export default function Home() {
           </motion.div>
         </div>
       </section> */}
+      <section className="py-24 px-6 bg-gradient-to-r from-gray-900/50 to-black/50">
+        <AboutUs></AboutUs>
+      </section>
     </div>
   );
 }
