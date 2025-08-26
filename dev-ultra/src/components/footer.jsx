@@ -180,10 +180,7 @@ const Footer = () => {
           >
             {/* Copyright */}
             <div className="flex items-center gap-2 text-gray-400 text-sm">
-              <span>© {currentYear} DevUltra. Made with</span>
-              <Heart className="w-4 h-4 text-red-500 animate-pulse" />
-              <span>and</span>
-              <Code className="w-4 h-4 text-blue-400" />
+              <span>© {currentYear} DevUltra. All rights reserved.</span>
             </div>
 
             {/* Social Links */}
