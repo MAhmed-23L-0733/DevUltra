@@ -323,7 +323,7 @@ export default function AboutUs() {
         </p>
         <motion.a
           whileHover={{ scale: 1.1 }}
-          href="/email_us"
+          href="/contact"
           className="px-10 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full font-semibold shadow-lg"
         >
           Get in Touch

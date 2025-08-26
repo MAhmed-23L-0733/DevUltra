@@ -23,7 +23,7 @@ const Footer = () => {
       { name: "UI/UX Design" },
       { name: "Consulting" },
     ],
-    Company: [{ name: "Contact", href: "/email_us" }],
+    Company: [{ name: "Contact", href: "/contact" }],
     // Resources: [
     //   { name: "Blog", href: "/blog" },
     //   { name: "Documentation", href: "/docs" },
