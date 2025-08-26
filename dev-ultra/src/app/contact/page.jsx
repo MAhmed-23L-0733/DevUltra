@@ -29,11 +29,12 @@ export default function Home() {
               </span>
             </h2>
             <p className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
-              Your goals deserve more than templates. We craft custom solutions designed to deliver real results.
+              Your goals deserve more than templates. We craft custom solutions
+              designed to deliver real results.
             </p>
 
             <motion.a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=Devultrasolutions@gmail.com"
+              href="mailto:Devultrasolutions@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{
@@ -46,7 +47,6 @@ export default function Home() {
               Let's Collaborate
               <Star className="w-6 h-6 group-hover:rotate-12 transition-transform" />
             </motion.a>
-
           </motion.div>
         </div>
       </section>

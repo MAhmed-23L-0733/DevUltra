@@ -54,7 +54,7 @@ export default function RootLayout({
         {
           label: "Email",
           ariaLabel: "Email us",
-          href: "https://mail.google.com/mail/?view=cm&fs=1&to=Devultrasolutions@gmail.com"
+          href: "mailto:Devultrasolutions@gmail.com",
         },
         {
           label: "Instagram",
