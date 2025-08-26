@@ -33,7 +33,7 @@ export default function Home() {
             </p>
 
             <motion.a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=Devultrasolutions@gmail.com&su=For%20more%20information"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=Devultrasolutions@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{
