@@ -37,7 +37,7 @@ export default function AboutUs() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 1 }}
-          className="mt-6 text-lg md:text-xl max-w-4xl mx-auto text-gray-300 leading-relaxed"
+          className="mt-6 text-lg md:text-xl max-w-4xl mx-auto text-gray-300 leading-relaxed text-justify"
         >
           At DevUltra, we're a team of dreamers and doers on a mission to turn
           bold ideas into meaningful digital experiences. As a growing startup,
@@ -108,7 +108,7 @@ export default function AboutUs() {
           </span>
         </h2>
         <div className="overflow-hidden">
-          <div className="flex animate-marquee space-x-16">
+          <div className="flex animate-marquee space-x-10 lg:space-x-16">
             {[
               {
                 name: "HTML5",
@@ -267,7 +267,7 @@ export default function AboutUs() {
               Mission
             </span>
           </h2>
-          <p className="text-gray-300 text-lg leading-relaxed text-justify">
+          <p className="text-gray-300 text-sm lg:text-lg leading-relaxed text-justify">
             Our mission at DevUltra is to go beyond conventional development and
             deliver technology-driven solutions that transform businesses. We
             believe in using innovation as the foundation for progress,
