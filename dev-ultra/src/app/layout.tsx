@@ -42,7 +42,7 @@ export default function RootLayout({
         {
           label: "Work with us",
           ariaLabel: "Featured Projects",
-          href: "/email_us",
+          href: "/contact",
         },
       ],
     },
