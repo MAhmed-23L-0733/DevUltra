@@ -48,7 +48,11 @@ const Footer = () => {
       icon: Linkedin,
       href: "https://www.linkedin.com/company/devultrasolutions/",
     },
-    { name: "Email", icon: Mail, href: "https://mail.google.com/mail/?view=cm&fs=1&to=Devultrasolutions@gmail.com" },
+    {
+      name: "Email",
+      icon: Mail,
+      href: "https://mail.google.com/mail/?view=cm&fs=1&to=Devultrasolutions@gmail.com",
+    },
   ];
 
   const containerVariants = {
@@ -125,7 +129,7 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors group cursor-pointer">
                   <Phone className="w-4 h-4 group-hover:text-blue-400 transition-colors" />
-                  <span className="text-sm">+92 300 2588389</span>
+                  <span className="text-sm">+92 333 8240907</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors group cursor-pointer">
                   <Mail className="w-4 h-4 group-hover:text-blue-400 transition-colors" />
@@ -158,7 +162,7 @@ const Footer = () => {
                           <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                         </a>
                       ) : (
-                        <div className="group flex items-center gap-2 text-gray-400 hover:text-white transition-all duration-300 hover:translate-x-1 cursor-pointer">
+                        <div className="group flex items-center gap-2 text-gray-400">
                           <span className="text-sm">{link.name}</span>
                         </div>
                       )}

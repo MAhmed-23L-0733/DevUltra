@@ -60,7 +60,7 @@ export default function AboutUs() {
           {[
             {
               title: "Frontend Development",
-              desc: "We design modern, responsive, and engaging user interfaces using React.js, Next.js, TypeScript, and TailwindCSS to deliver seamless, fast, and accessible experiences.",
+              desc: "We design modern, responsive, and engaging user interfaces using React.js, Next.js, TypeScript and TailwindCSS to deliver seamless, fast, and accessible experiences. Our team also work with vue.js providing you a set of different choices for a versatile experience.",
               img: "/frontend.jpeg",
             },
             {
@@ -70,7 +70,7 @@ export default function AboutUs() {
             },
             {
               title: "Full-Stack Solutions",
-              desc: "We deliver complete digital solutions by combining powerful frontend and backend technologies such as React, Next.js, Node.js, PostgreSQL, and Prisma to ensure performance, scalability, and future-ready products.",
+              desc: "We deliver complete digital solutions by combining powerful frontend and backend technologies such as React, Next.js, Vue.js, Node.js, PostgreSQL, and Prisma to ensure performance, scalability, and future-ready products.",
               img: "/fullstack.jpg",
             },
           ].map((service, index) => (
