@@ -302,7 +302,7 @@ export default function AboutUs() {
         </p>
       </div>
 
-      <div className="py-24 text-center bg-gradient-to-r from-gray-900 to-black">
+      <div className="py-24 px-6 text-center bg-gradient-to-r from-gray-900 to-black">
         <motion.h2
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -314,7 +314,7 @@ export default function AboutUs() {
             Extraordinary
           </span>
         </motion.h2>
-        <p className="text-gray-300 max-w-3xl mx-auto mb-8 text-lg">
+        <p className="text-gray-300 max-w-3xl mx-auto mb-8 text-lg text-justify">
           Whether you’re a visionary startup or a functional enterprise,
           DevUltra is here to help you harness the power of technology. We
           combine design, development, and innovation to craft digital solutions
