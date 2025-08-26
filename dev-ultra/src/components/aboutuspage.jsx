@@ -324,7 +324,7 @@ export default function AboutUs() {
         <motion.a
           whileHover={{ scale: 1.1 }}
           href="/contact"
-          className="px-10 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full font-semibold shadow-lg"
+          className="group bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold py-4.5 px-12 rounded-full flex items-center gap-3 mx-auto transition-all duration-300 shadow-xl w-48"
         >
           Get in Touch
         </motion.a>
