@@ -125,11 +125,11 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors group cursor-pointer">
                   <Phone className="w-4 h-4 group-hover:text-blue-400 transition-colors" />
-                  <span className="text-sm">+92 320 4829214</span>
+                  <span className="text-sm">+92 300 2588389</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors group cursor-pointer">
                   <Mail className="w-4 h-4 group-hover:text-blue-400 transition-colors" />
-                  <span className="text-sm">devultra@gmail.com</span>
+                  <span className="text-sm">Devultrasolutions@gmail.com</span>
                 </div>
               </div>
             </motion.div>
