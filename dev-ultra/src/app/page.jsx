@@ -50,7 +50,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <Link href="/email_us" passHref>
+            <Link href="/contact" passHref>
               <motion.button
                 whileHover={{
                   scale: 1.05,
