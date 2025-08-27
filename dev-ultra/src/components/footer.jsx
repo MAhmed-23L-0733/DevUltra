@@ -8,28 +8,20 @@ import {
   MapPin,
   Phone,
   Instagram,
-  Code,
-  Heart,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const footerLinks = {
     Services: [
-      { name: "Web Development" },
-      { name: "Mobile Apps" },
-      { name: "UI/UX Design" },
-      { name: "Consulting" },
+      { name: "Web Development", href: "/web-development" },
+      { name: "UI/UX Design", href: "/ui-ux-design" },
+      { name: "Consulting", href: "/consulting" },
     ],
-    Company: [{ name: "Contact", href: "/contact" }],
-    // Resources: [
-    //   { name: "Blog", href: "/blog" },
-    //   { name: "Documentation", href: "/docs" },
-    //   { name: "Case Studies", href: "/cases" },
-    //   { name: "Support", href: "/support" },
-    // ],
+    Contact: [{ name: "Contact us", href: "/contact" }],
   };
 
   const socialLinks = [
@@ -153,7 +145,14 @@ const Footer = () => {
                 <ul className="space-y-3">
                   {links.map((link) => (
                     <li key={link.name}>
-                      {title != "Services" ? (
+                      {title === "Services" ? (
+                        <Link href={link.href} passHref>
+                          <span className="group flex items-center gap-2 text-gray-400 hover:text-white transition-all duration-300 hover:translate-x-1 cursor-pointer">
+                            <span className="text-sm">{link.name}</span>
+                            <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                          </span>
+                        </Link>
+                      ) : (
                         <a
                           href={link.href}
                           className="group flex items-center gap-2 text-gray-400 hover:text-white transition-all duration-300 hover:translate-x-1"
@@ -161,10 +160,6 @@ const Footer = () => {
                           <span className="text-sm">{link.name}</span>
                           <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                         </a>
-                      ) : (
-                        <div className="group flex items-center gap-2 text-gray-400">
-                          <span className="text-sm">{link.name}</span>
-                        </div>
                       )}
                     </li>
                   ))}

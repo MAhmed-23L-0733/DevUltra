@@ -25,20 +25,26 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const items = [
-    // {
-    //   label: "About",
-    //   bgColor: "#0D0716",
-    //   textColor: "#fff",
-    //   links: [
-    //     { label: "Home", ariaLabel: "Home", href: "/" },
-    //     { label: "About us", ariaLabel: "About Company", href: "/about-us" },
-    //   ],
-    // },
     {
       label: "Business",
       bgColor: "#170D27",
       textColor: "#fff",
       links: [
+        {
+          label: "Web Development",
+          ariaLabel: "webdev",
+          href: "/web-development",
+        },
+        {
+          label: "UI/UX Design",
+          ariaLabel: "ui/ux",
+          href: "/ui-ux-design",
+        },
+        {
+          label: "Consulting",
+          ariaLabel: "consultation",
+          href: "/consulting",
+        },
         {
           label: "Work with us",
           ariaLabel: "Featured Projects",
